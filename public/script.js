@@ -1,5 +1,12 @@
-var config = require("config.js");
-
+// Initialize Firebase
+var config = {
+  apiKey: "xxx",
+  authDomain: "cloud-function-demo-2c9f3.firebaseapp.com",
+  databaseURL: "https://cloud-function-demo-2c9f3.firebaseio.com",
+  projectId: "cloud-function-demo-2c9f3",
+  storageBucket: "cloud-function-demo-2c9f3.appspot.com",
+  messagingSenderId: "113186434363"
+};
 firebase.initializeApp(config);
 const db = firebase.firestore();
 
